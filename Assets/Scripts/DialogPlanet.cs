@@ -19,7 +19,7 @@ public class DialogPlanet : MonoBehaviour
     public void OnPointerEnter()
     {
         dialogBubble.SetActive(true);
-        Debug.Log("on point enter ---- ");
+
     }
 
     /// <summary>
@@ -28,7 +28,6 @@ public class DialogPlanet : MonoBehaviour
     public void OnPointerExit()
     {
         dialogBubble.SetActive(false);
-        Debug.Log("on point exit  -----");
     }
 
     /// <summary>
@@ -37,6 +36,6 @@ public class DialogPlanet : MonoBehaviour
     /// </summary>
     public void OnPointerClick()
     {
-        Debug.Log("on point click ---- ");
+       
     }
 }
