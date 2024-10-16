@@ -4,19 +4,17 @@ using UnityEngine;
 
 public class SunOrbit : MonoBehaviour
 {
-    public Transform sun;         // La Tierra a la que la Luna orbitará
-    public float orbitSpeed = 10f;  // Velocidad de la órbita de la Luna
-    public float orbitDistance = 5f; // Distancia desde la Tierra
-    public float rotationSpeed = 10.0f; // Velocidad de rotación
+    public Transform sun;       
+    public float orbitSpeed = 10f;  
+    public float orbitDistance = 5f; 
+    public float rotationSpeed = 10.0f; 
     void Start()
     {
-        // Coloca la Luna a la distancia adecuada de la Tierra
         transform.position = sun.position + new Vector3(orbitDistance, 0, 0);
     }
 
     void Update()
     {
-        // Hacer que la Luna orbite alrededor de la Tierra
         OrbitAroundSun();
     }
 
