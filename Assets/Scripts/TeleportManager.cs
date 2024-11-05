@@ -10,6 +10,7 @@ public class TeleportManager : MonoBehaviour
     [Range(0f, 1f)] public float timeTeleport = 0.5f;
     public Transform player;
     private float playerGroundPos;
+    public AudioSource playerAudioSource;
     private void Awake()
     {
         if (Instance == null)
@@ -30,23 +31,30 @@ public class TeleportManager : MonoBehaviour
     }
     public void Fade(bool isFadeIn)
     {
-        if (isFadeIn)
+        if (isFadeIn){
             imgFade.CrossFadeAlpha(0, timeTeleport, true);
-        else
+            playerAudioSource.Stop();
+        }
+        else{
             imgFade.CrossFadeAlpha(1, timeTeleport, true);
+            
+        }
     }
     public void Teleport(Vector3 newPos)
     {
         StartCoroutine(MovePosition(newPos));
+  
     }
     private IEnumerator MovePosition(Vector3 newPos)
     {
         Fade(false);
+        playerAudioSource.Play();
         yield return new WaitForSeconds(timeTeleport);
         player.position = new Vector3(newPos.x, playerGroundPos,
         newPos.z);
         yield return new WaitForSeconds(timeTeleport);
         Fade(true);
+
     }
 }
 
