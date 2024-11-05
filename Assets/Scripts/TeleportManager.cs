@@ -43,16 +43,18 @@ public class TeleportManager : MonoBehaviour
     public void Teleport(Vector3 newPos)
     {
         StartCoroutine(MovePosition(newPos));
+  
     }
     private IEnumerator MovePosition(Vector3 newPos)
     {
         Fade(false);
+        playerAudioSource.Play();
         yield return new WaitForSeconds(timeTeleport);
         player.position = new Vector3(newPos.x, playerGroundPos,
         newPos.z);
-        playerAudioSource.Play();
         yield return new WaitForSeconds(timeTeleport);
         Fade(true);
+
     }
 }
 
