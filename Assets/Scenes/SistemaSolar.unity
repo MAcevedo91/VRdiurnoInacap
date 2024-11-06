@@ -3578,8 +3578,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sun: {fileID: 571182236}
-  orbitSpeed: 11
-  orbitDistance: 90
+  orbitSpeed: 10
+  orbitDistance: 110
   rotationSpeed: 4
 --- !u!4 &831642138
 Transform:
@@ -3832,7 +3832,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Planeta Mercurio
+  m_text: "Mercurio\n\n- Es el planeta m\xE1s cercano al Sol.\n\n-Tiene temperaturas
+    extremadamente altas durante el d\xEDa (alrededor de 430\xB0C) y muy bajas en
+    la noche (-180\xB0C).\n\n- No tiene atm\xF3sfera significativa, por lo que su
+    superficie est\xE1 muy impactada por meteoritos.\n\n- Es el planeta m\xE1s peque\xF1o
+    del sistema solar.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4156,8 +4160,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sun: {fileID: 0}
-  orbitSpeed: 10
-  orbitDistance: 80
+  orbitSpeed: 15
+  orbitDistance: 90
   rotationSpeed: 10
 --- !u!114 &992527987
 MonoBehaviour:
@@ -4804,7 +4808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: Prueba
-  dialogBubble: {fileID: 761132094}
+  dialogBubble: {fileID: 1535039614}
 --- !u!114 &1169490747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5933,7 +5937,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sun: {fileID: 571182236}
-  orbitSpeed: 6.5
+  orbitSpeed: 20
   orbitDistance: 30
   rotationSpeed: 6.5
 --- !u!114 &1369137347
@@ -10832,7 +10836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sun: {fileID: 571182236}
-  orbitSpeed: 8
+  orbitSpeed: 15
   orbitDistance: 45
   rotationSpeed: 4
 --- !u!4 &1458337809
@@ -11227,7 +11231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sun: {fileID: 571182236}
-  orbitSpeed: 8
+  orbitSpeed: 25
   orbitDistance: 15
   rotationSpeed: 4
 --- !u!1 &1606660078
@@ -11336,7 +11340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sun: {fileID: 571182236}
-  orbitSpeed: 9
+  orbitSpeed: 10
   orbitDistance: 65
   rotationSpeed: 4
 --- !u!4 &1610717812
@@ -11967,9 +11971,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sun: {fileID: 571182236}
-  orbitSpeed: 13
+  orbitSpeed: 8
   orbitDistance: 100
-  rotationSpeed: 4
+  rotationSpeed: 13
 --- !u!4 &1917888626
 Transform:
   m_ObjectHideFlags: 0
@@ -12034,7 +12038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sun: {fileID: 571182236}
-  orbitSpeed: 10
+  orbitSpeed: 30
   orbitDistance: 10
   rotationSpeed: 5
 --- !u!1 &2002365100
